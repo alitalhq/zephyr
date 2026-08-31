@@ -290,6 +290,11 @@
 		/* (B25) MCASP0_AXR1.GPIO1_9 */
 		pinmux = <K3_PINMUX(0x19c, PIN_INPUT_PULLDOWN, MUX_MODE_7)>;
 	};
+
+	icm20948_int_default: icm20948-int-default-pins {
+		/* (J22) OSPI0_CSn3.GPIO0_14, the INT1 output of the IMU */
+		pinmux = <K3_PINMUX(0x038, PIN_INPUT, MUX_MODE_7)>;
+	};
 };
 
 &mcu_pinctrl {
